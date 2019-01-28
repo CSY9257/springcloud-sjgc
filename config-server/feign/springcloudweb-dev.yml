@@ -1,13 +1,8 @@
 server:
-  port: 8080
+  port: 6666
 
 spring:
   data:
-    elasticsearch:
-      repositories:
-        enabled: true
-      cluster-name: elasticsearch
-      cluster-nodes: localhost:9300
   application:
     name: springcloudweb
   thymeleaf:
@@ -15,12 +10,12 @@ spring:
     encoding: UTF-8
     content-type: text/html
     cache: false
-  rabbitmq:
-    host: 192.168.1.140
-    #5672是rabbitMq的默认端口 15672是客户端管理界面端口
-    port: 5672
-    username: root
-    password: 123456
+#  rabbitmq:
+#    host: localhost
+#    #5672是rabbitMq的默认端口 15672是客户端管理界面端口
+#    port: 5672
+#    username: root
+#    password: 123456
     #登录报错加这个
 ribbon:
   eureka:
@@ -28,3 +23,20 @@ ribbon:
 feign:
   hystrix:
     enabled: true
+
+stream:
+  kafka:
+    binder:
+      brokers: localhost:9092
+      zk-nodes: localhost:2182
+      auto-add-partitions: true
+      auto-create-topics: true
+      min-partition-count: 1
+  bindings:
+    input:
+      destination: event-demo
+      group: s1
+      consumer:
+        autoCommitOffset: false
+        concurrency: 1
+        partitioned: false

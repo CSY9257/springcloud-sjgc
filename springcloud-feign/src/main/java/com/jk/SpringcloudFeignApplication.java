@@ -14,10 +14,10 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableBinding(ReceiveService.class)
-public class SpringcloutFeignApplication {
+public class SpringcloudFeignApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringcloutFeignApplication.class, args);
+        SpringApplication.run(SpringcloudFeignApplication.class, args);
     }
 
     //监听消息
