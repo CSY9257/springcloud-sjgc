@@ -1,4 +1,4 @@
-package com.jk.service;
+package com.sjgc.service;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.SubscribableChannel;

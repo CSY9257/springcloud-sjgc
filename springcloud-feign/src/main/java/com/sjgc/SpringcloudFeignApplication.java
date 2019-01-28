@@ -1,6 +1,6 @@
-package com.jk;
+package com.sjgc;
 
-import com.jk.service.ReceiveService;
+import com.sjgc.service.ReceiveService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;

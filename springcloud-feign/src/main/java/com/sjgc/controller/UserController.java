@@ -1,4 +1,4 @@
-package com.jk.controller;
+package com.sjgc.controller;
 
 import com.sjgc.service.UserServiceApi;
 import org.springframework.beans.factory.annotation.Autowired;

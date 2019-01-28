@@ -1,4 +1,4 @@
-package com.jk.service;
+package com.sjgc.service;
 
 import com.sjgc.service.UserServiceApi;
 import org.springframework.cloud.openfeign.FeignClient;
