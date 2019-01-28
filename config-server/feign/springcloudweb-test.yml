@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+  application:
+    name: springcloudweb
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  rabbitmq:
+    host: 192.168.1.140
+    #5672是rabbitMq的默认端口 15672是客户端管理界面端口
+    port: 5672
+    username: root
+    password: 123456
+    #登录报错加这个
+ribbon:
+  eureka:
+    enabled: true
+feign:
+  hystrix:
+    enabled: false
