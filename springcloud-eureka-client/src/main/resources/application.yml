@@ -1,5 +1,5 @@
 server:
-  port: 8881
+  port: 8081
 
 spring:
   application:
@@ -22,4 +22,9 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
       instance:
         instance-id: ${spring.application.name}:${server.port}
+
+management:
+  security:
+    enabled: false
+
 

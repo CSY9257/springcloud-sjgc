@@ -11,9 +11,12 @@
         <module name="springcloud-config-client1" />
         <module name="springcloud-eureka-client" />
         <module name="springcloud-eureka-server" />
+        <module name="springcloud-feign2" />
         <module name="springcloud-ribbon" />
-        <module name="springclout-feign" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springclout-feign" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
