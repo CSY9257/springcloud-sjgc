@@ -1,5 +1,5 @@
 server:
-  port: 8885
+  port: 7000
 spring:
   application:
     name: serverconfig
@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/CSY9257/springcloud-sjgc.git
+          uri: https://gitee.com/chengshaungyin/springcloud-config.gitt
           username: CSY9257
           password: Shuangyin21
           #配置文件所在的文件夹(必须是文件所在的文件夹 不能是父文件夹)

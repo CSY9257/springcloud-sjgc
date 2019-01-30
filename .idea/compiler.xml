@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-api" />
+        <module name="springcloud-client-feign" />
         <module name="springcloud-config" />
         <module name="springcloud-eureka-client" />
         <module name="springcloud-eureka-server" />
-        <module name="springcloud-feign2" />
         <module name="springcloud-ribbon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springcloud-config-client1" target="1.8" />
+      <module name="springcloud-feign" target="1.8" />
       <module name="springclout-feign" target="1.8" />
     </bytecodeTargetLevel>
   </component>

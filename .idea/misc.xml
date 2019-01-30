@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/springclout-feign/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-feign2/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-client-feign/pom.xml" />
       </list>
     </option>
   </component>
