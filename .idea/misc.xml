@@ -9,7 +9,6 @@
         <option value="$PROJECT_DIR$/springcloud-eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/springclout-feign/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-config-client1/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-feign2/pom.xml" />
       </list>
