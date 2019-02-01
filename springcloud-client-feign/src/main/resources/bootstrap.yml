@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8888/eureka/
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
 #是否需要权限拉去，默认是true,如果不false就不允许你去拉取配置中心Server更新的内容
 management:
   security:

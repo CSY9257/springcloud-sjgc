@@ -2,19 +2,25 @@ server:
   port: 7000
 spring:
   application:
-    name: serverconfig
+    name: service-config
   #git 远程仓库相关配置 若是私有项目 需要用户名密码
   cloud:
     config:
       server:
         git:
-          uri: https://gitee.com/chengshaungyin/springcloud-config.gitt
-          username: CSY9257
+          uri: https://gitee.com/csy9257/springcloud-config.git
+          username: csy9257
           password: Shuangyin21
           #配置文件所在的文件夹(必须是文件所在的文件夹 不能是父文件夹)
-          search-paths: config-server/feign
+          search-paths: springcloud-config/feign
 eureka:
   client:
     service-url:
       #当前生产者注册地址 （注册中心地址）
       defaultZone: http://localhost:8888/eureka
+
+
+#是否需要权限拉去，默认是true,如果不false就不允许你去拉取配置中心Server更新的内容
+  management:
+    security:
+      enabled: false
