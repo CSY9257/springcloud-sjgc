@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/springcloud-feign2/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-client-feign/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config-client1/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-server/pom.xml" />
       </list>
     </option>
   </component>

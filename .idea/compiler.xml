@@ -10,6 +10,7 @@
         <module name="springcloud-client-feign" />
         <module name="springcloud-config" />
         <module name="springcloud-config-client1" />
+        <module name="springcloud-config-server" />
         <module name="springcloud-eureka-client" />
         <module name="springcloud-eureka-server" />
         <module name="springcloud-ribbon" />

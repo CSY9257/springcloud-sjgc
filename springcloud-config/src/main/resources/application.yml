@@ -9,10 +9,10 @@ spring:
       server:
         git:
           uri: https://gitee.com/csy9257/springcloud-config.git
-          username: csy9257
+          username: csy9257@163.com
           password: Shuangyin21
           #配置文件所在的文件夹(必须是文件所在的文件夹 不能是父文件夹)
-          search-paths: springcloud-config/feign
+          search-paths: springcloud-config/config
 eureka:
   client:
     service-url:
