@@ -1,15 +1,15 @@
 package com.sjgc.controller;
 
-import com.sjgc.idleaf.IdLeafService;
-import com.sjgc.idleaf.support.WithGeneIdLeafServiceImpl;
 import com.sjgc.model.IdSegment;
 import com.sjgc.service.IdsLeafService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @Controller
 @RequestMapping("idLeaf")
@@ -59,6 +59,12 @@ public class IdsLeafController {
     }
 
 
+    @RequestMapping(value="getOrderByUserId")
+    @ResponseBody
+    public Long getId(Long userId){
+        return idsLeafService.getId(userId);
+    };
+
 
 
     // 端口号
@@ -75,6 +81,12 @@ public class IdsLeafController {
     @ResponseBody
     public String hi(@RequestParam String name) {
         return "hi " + name + " ,i am from port:" + port;
+    }
+
+
+    @RequestMapping(value="IndexJsp")
+    public String IndexJsp(){
+        return "/index/index";
     }
 
 }

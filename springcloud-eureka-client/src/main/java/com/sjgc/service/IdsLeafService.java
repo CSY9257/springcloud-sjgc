@@ -13,6 +13,8 @@ public interface IdsLeafService {
 
     List<IdSegment> queryTable();
 
+    Long getId(Long userId);
+
     /*public Long getOrderId(long userId);*/
 
 }

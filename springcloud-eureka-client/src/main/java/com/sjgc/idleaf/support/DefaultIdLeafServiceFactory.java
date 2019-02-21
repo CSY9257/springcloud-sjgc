@@ -25,7 +25,7 @@ public class DefaultIdLeafServiceFactory implements IdLeafServiceFactory {
         this.taskExecutor = taskExecutor;
     }
 
-    //双重判定锁
+    //双重判定锁  ----
     @Override
     public Long getIdByBizTag(String bizTag) {
         IdLeafService issdervice = null;

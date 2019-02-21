@@ -49,18 +49,20 @@ public class WithGeneIdLeafServiceImpl implements WithGeneIdLeafService {
         int leftMoveBit = id.leftMoveBit();
         Long userId = 400L;
         Long prefixOrderId = 20000L;
-        System.out.println(Integer.toBinaryString(dbSize));
+        //   1
+        System.out.println(Integer.toBinaryString(dbSize)+"......1");
         Long lastOrderId = ((prefixOrderId << leftMoveBit) | (userId % dbSize));
-        System.out.println(lastOrderId);
-
-        System.out.println(Integer.toBinaryString(10000));
-
-        System.out.println(Integer.parseInt("1001110001000000000", 2));
-
-        System.out.println(userId % dbSize);
-
-        System.out.println(Integer.toBinaryString((int) (userId % dbSize)));
-
-        System.out.println(Integer.toBinaryString(320016));
+        //   2
+        System.out.println(lastOrderId+"......2");
+        //   3
+        System.out.println(Integer.toBinaryString(10000)+"......3");
+        //   4
+        System.out.println(Integer.parseInt("1001110001000000000", 2)+"......4");
+        //   5
+        System.out.println(userId % dbSize+"......5");
+        //   6
+        System.out.println(Integer.toBinaryString((int) (userId % dbSize))+"......6");
+        //   7
+        System.out.println(Integer.toBinaryString(320016)+"......7");
     }
 }
