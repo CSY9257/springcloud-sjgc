@@ -16,7 +16,7 @@ import org.apache.ignite.spi.discovery.tcp.ipfinder.zk.TcpDiscoveryZookeeperIpFi
 
 /**
  * 参考：https://my.oschina.net/liyuj/blog/617472
- *
+ *      基于Ignite   分布式ID生成器
  * @author sunff
  */
 

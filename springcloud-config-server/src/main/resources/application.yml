@@ -1,0 +1,28 @@
+server:
+  port: 7000
+#服务名字
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #git 仓库的地址
+          uri: https://gitee.com/csy9257/springcloud-config.git
+          #git 仓库的账号密码
+          username: csy9257@163.com
+          password: Shuangyin21
+          #配置文件所在的文件夹(必须是文件所在的文件夹 不能是父文件夹)
+          search-paths: springcloud-config/config
+#加入注册中心，实现高可用
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+      instance:
+        instance-id: ${spring.application.name}:${server.port}
+  #是否需要权限拉去，默认是true,如果不false就不允许你去拉取配置中心Server更新的内容
+  management:
+    security:
+      enabled: false

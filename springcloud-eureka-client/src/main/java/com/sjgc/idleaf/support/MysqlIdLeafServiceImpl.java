@@ -58,7 +58,7 @@ public class MysqlIdLeafServiceImpl implements IdLeafService {
         log.info("init run success...");
     }
 
-    /*
+/*
      * private Long asynGetId() {
      *
      * if (segment[index()].getMiddleId().equals(currentId.longValue()) ||
@@ -99,7 +99,7 @@ public class MysqlIdLeafServiceImpl implements IdLeafService {
      * return currentId.incrementAndGet();
      *
      * }
-     */
+*/
 
     private Long asynGetId2() {
 

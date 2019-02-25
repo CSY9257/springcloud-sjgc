@@ -29,6 +29,7 @@
     </bean>
 
 
+
     <!--  getIdByBizTag  -->
     <bean id="leafServiceFactory" class="com.sjgc.idleaf.support.DefaultIdLeafServiceFactory">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>

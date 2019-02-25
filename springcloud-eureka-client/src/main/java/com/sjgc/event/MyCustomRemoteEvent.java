@@ -1,6 +1,5 @@
 package com.sjgc.event;
 
-import org.springframework.cloud.bus.event.RemoteApplicationEvent;
 
 /**
  * @ClassName: MyCustomRemoteEvent
@@ -9,9 +8,9 @@ import org.springframework.cloud.bus.event.RemoteApplicationEvent;
  * @Description:
  * @Phone: 13146789257
  */
-public class MyCustomRemoteEvent extends RemoteApplicationEvent {
+public class MyCustomRemoteEvent /*extends RemoteApplicationEvent */{
 
-    private String message;
+    /*private String message;
 
 
     //jackson序列化反序列化必须有无参构造函数
@@ -32,7 +31,7 @@ public class MyCustomRemoteEvent extends RemoteApplicationEvent {
 
     public void setMessage(String message) {
         this.message = message;
-    }
+    }*/
 
 
 }
